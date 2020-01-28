@@ -1,0 +1,84 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 47.369998931885, 10.617305755615, 26.439823150635, },
+		bbMin = { -48, -13.278277397156, -4.0000038146973, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 47.684997558594, 11.947792053223, 15.219913482666, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "asset/shared/silver_mine_balks.mtl", "asset/shared/silver_mine_wall.mtl", "asset/shared/silver_mine_roof.mtl", "asset/shared/silver_mine_borders.mtl", "asset/shared/silver_mine_small_planks.mtl", "asset/shared/silver_mine_main_2.mtl", },
+						mesh = "asset/silvermine_small_house/small_house_lod0.msh",
+						name = "small_house",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.4200000762939, -8.8882751464844, 0, 1, },
+					},
+					{
+						materials = { "asset/shared/silver_mine_balks.mtl", "asset/shared/silver_mine_roof.mtl", "asset/shared/silver_mine_main_1.mtl", },
+						mesh = "asset/silvermine_shed/shed_balks_lod0.msh",
+						name = "shed_balks",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.5, 7.7999973297119, 0, 1, },
+					},
+					{
+						materials = { "asset/shared/cargo_coal.mtl", },
+						mesh = "asset/heap_coal/heap_of_coal_lod0.msh",
+						name = "heap_of_coal",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.5, 7.4197397232056, 0, 1, },
+					},
+					{
+						materials = { "asset/shared/silver_mine_main_2.mtl", },
+						mesh = "asset/silvermine_boiler/boiler_lod0.msh",
+						name = "boiler",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.8499999046326, -6.75, 0, 1, },
+					},
+					{
+						materials = { "asset/shared/silver_mine_main_2.mtl", "asset/shared/silver_mine_main_1.mtl", "asset/shared/silver_mine_borders.mtl", "asset/shared/silver_mine_wall.mtl", "asset/shared/silver_mine_balks.mtl", "asset/shared/silver_mine_small_planks.mtl", "asset/shared/silver_mine_roof.mtl", },
+						mesh = "asset/silvermine_0_1_0/engine_house_lod0.msh",
+						name = "engine_house",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "asset/shared/silver_mine_balks.mtl", "asset/shared/silver_mine_big_planks.mtl", "asset/shared/silver_mine_small_planks.mtl", "asset/shared/silver_mine_concrete.mtl", "asset/shared/silver_mine_borders.mtl", "asset/shared/silver_mine_main_1.mtl", },
+						mesh = "asset/silvermine_0_1_0/lift_lod0.msh",
+						name = "lift",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "asset/shared/silver_mine_main_1.mtl", },
+						mesh = "asset/silvermine_0_1_0/lift_wheel_lod0.msh",
+						name = "lift_wheel",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "asset/shared/silver_mine_main_1.mtl", },
+						mesh = "asset/silvermine_0_1_0/lift_container_lod0.msh",
+						name = "lift_container",
+						transf = { 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, -2.4492937051703e-16, 0, 2.4492937051703e-16, 1.4997597572212e-32, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "asset/shared/silver_mine_borders.mtl", },
+						mesh = "asset/silvermine_0_1_0/lift_robe_lod0.msh",
+						name = "lift_robe",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 10016.491210938,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

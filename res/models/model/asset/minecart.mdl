@@ -1,0 +1,60 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 1.1099998950958, 0.7299998998642, 2.002103805542, },
+		bbMin = { -1.1000000238419, -0.7299998998642, 0.24804075062275, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 1.1050000190735, 0.7299998998642, 0.87703150510788, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "asset/shared/silvermine_main_3.mtl", },
+						mesh = "asset/minecart/minecart_body_lod0.msh",
+						name = "minecart_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.1920928955078e-07, 0, 0, 1, },
+					},
+					{
+						materials = { "asset/shared/heap_silver.mtl", },
+						mesh = "asset/minecart/load_lod0.msh",
+						name = "load",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "asset/shared/silvermine_main_3.mtl", },
+						mesh = "asset/minecart/d1_lod0.msh",
+						name = "d1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.96499890089035, 5.9604644775391e-08, 1.7580000162125, 1, },
+					},
+					{
+						materials = { "asset/shared/silvermine_main_3.mtl", },
+						mesh = "asset/minecart/w1_lod0.msh",
+						name = "w1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.5, 0, 0.49800002574921, 1, },
+					},
+					{
+						materials = { "asset/shared/silvermine_main_3.mtl", },
+						mesh = "asset/minecart/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.49999988079071, 0, 0.49800002574921, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 439.49304199219,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

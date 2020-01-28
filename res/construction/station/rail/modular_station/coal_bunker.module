@@ -1,0 +1,114 @@
+local transf = require "transf"
+local vec3 = require "vec3"
+local modulesutil = require "modulesutil"
+local constructionutil = require "constructionutil"
+local trainstationutil = require "modules/trainstationutil"
+
+--Begin Generated
+local generatedData = {
+	["cargo_station_1_assets_1"] = {
+		models = {
+			-- ["asset/ground/barrel_steel.mdl"] = {
+            -- { 0.00000, 0.00000, -1.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 3.60000, -22.52000, 0.41000, 1.00000 },
+			-- },
+		},
+	},
+}
+--End Generated
+
+function data()
+
+return {
+
+	cost = {
+		price = 19681,
+	},
+
+	description = {
+		name = _("Coal bunker"),
+		description = _("Coal bunker. Will accept a small amount of coal."),
+		icon = "ui/construction/station/rail/modular_station/coal_bunker.tga"
+	}, 
+
+	category = {
+		categories = { "misc", },
+	},
+
+	availability = {
+		yearFrom = 0,
+	},
+
+	type = "rail_side_building_size1",
+
+	order = {
+		value = 1968101,
+	},
+
+	metadata = {
+		era = 5,
+		level = 1,
+		span = {2, 2}
+	},
+	
+	updateFn = function(result, transform, tag, slotId, addModuleFn, params)
+		local config = {
+			extend = { 6, -6, 0, -17, 4, 0 },
+			main = "station/rail/cargo/station_1.mdl",
+			con_left = {
+				"station/rail/cargo/station_1_con_l_1.mdl",
+				"station/rail/cargo/station_1_con_l_1.mdl",
+				"station/rail/cargo/station_1_con_l_1.mdl",
+			},
+			con_right = {
+				"station/rail/cargo/station_1_con_r_1.mdl",
+				"station/rail/cargo/station_1_con_r_1.mdl",
+				"station/rail/cargo/station_1_con_r_1.mdl",
+			},
+			end_left = "station/rail/cargo/station_1_end_l.mdl",
+			end_right = "station/rail/cargo/station_1_end_r.mdl",
+			slotIdOffset = 5,
+			translationY = 0,
+		}
+	
+		local tran = trainstationutil.MakeMainBuildingModule(result, transform, tag, slotId, addModuleFn, params, config)   -- Turn this into a bona fide module
+		constructionutil.addModels(generatedData["cargo_station_1_assets_1"], result.models, tran, tag)						-- Add props
+	end,
+	
+	getModelsFn = function()
+		
+		local result = {
+			{ 
+				id = "station/rail/cargo/station_1.mdl",
+				transf = transf.rotZTransl(math.rad(-90), vec3.new(15,0,0)),
+			},
+			{ 
+				id = "station/rail/cargo/station_1_end_l.mdl",
+				transf = transf.rotZTransl(math.rad(-90), vec3.new(15,0,0)),
+			},
+			{ 
+				id = "station/rail/cargo/station_1_end_r.mdl",
+				transf = transf.rotZTransl(math.rad(-90), vec3.new(15,0,0)),
+			},
+		}
+		
+		return result
+	end,
+
+	stocks = {
+		{
+			cargoType = "COAL",
+			type = "RECEIVING",
+			edges = { },
+			moreCapacity = 20
+		}
+	},
+
+	rule = {
+		input = { 1 },
+		output = { },
+		capacity = 2,
+		consumptionFactor = 1.2
+	}
+}
+
+end

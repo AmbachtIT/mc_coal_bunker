@@ -1,0 +1,148 @@
+function data()
+return {
+	subMeshes = {
+		{
+			indices = {
+				normal = {
+					count = 600,
+					offset = 82212,
+				},
+				position = {
+					count = 600,
+					offset = 81012,
+				},
+				tangent = {
+					count = 600,
+					offset = 82812,
+				},
+				uv0 = {
+					count = 600,
+					offset = 81612,
+				},
+			},
+		},
+		{
+			indices = {
+				normal = {
+					count = 888,
+					offset = 85188,
+				},
+				position = {
+					count = 888,
+					offset = 83412,
+				},
+				tangent = {
+					count = 888,
+					offset = 86076,
+				},
+				uv0 = {
+					count = 888,
+					offset = 84300,
+				},
+			},
+		},
+		{
+			indices = {
+				normal = {
+					count = 48,
+					offset = 87060,
+				},
+				position = {
+					count = 48,
+					offset = 86964,
+				},
+				tangent = {
+					count = 48,
+					offset = 87108,
+				},
+				uv0 = {
+					count = 48,
+					offset = 87012,
+				},
+			},
+		},
+		{
+			indices = {
+				normal = {
+					count = 11712,
+					offset = 110580,
+				},
+				position = {
+					count = 11712,
+					offset = 87156,
+				},
+				tangent = {
+					count = 11712,
+					offset = 122292,
+				},
+				uv0 = {
+					count = 11712,
+					offset = 98868,
+				},
+			},
+		},
+		{
+			indices = {
+				normal = {
+					count = 3168,
+					offset = 140340,
+				},
+				position = {
+					count = 3168,
+					offset = 134004,
+				},
+				tangent = {
+					count = 3168,
+					offset = 143508,
+				},
+				uv0 = {
+					count = 3168,
+					offset = 137172,
+				},
+			},
+		},
+		{
+			indices = {
+				normal = {
+					count = 4008,
+					offset = 154692,
+				},
+				position = {
+					count = 4008,
+					offset = 146676,
+				},
+				tangent = {
+					count = 4008,
+					offset = 158700,
+				},
+				uv0 = {
+					count = 4008,
+					offset = 150684,
+				},
+			},
+		},
+	},
+	vertexAttr = {
+		normal = {
+			count = 3696,
+			numComp = 3,
+			offset = 30564,
+		},
+		position = {
+			count = 15756,
+			numComp = 3,
+			offset = 0,
+		},
+		tangent = {
+			count = 46752,
+			numComp = 4,
+			offset = 34260,
+		},
+		uv0 = {
+			count = 14808,
+			numComp = 2,
+			offset = 15756,
+		},
+	},
+}
+end

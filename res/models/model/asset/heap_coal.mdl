@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 3.5321061611176, 2.291472196579, 1.0150409936905, },
+		bbMin = { -3.5321061611176, -2.291472196579, -0.0032113867346197, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 3.5321061611176, 2.291472196579, 0.50912618637085, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "asset/shared/cargo_coal.mtl", },
+						mesh = "asset/heap_coal/heap_of_coal_lod0.msh",
+						name = "heap_of_coal",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 1157.3681640625,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

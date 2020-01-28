@@ -1,0 +1,10 @@
+[h1]Introduction[/h1]
+This mod adds a coal bunker as a station module. It accepts some coal as cargo. It can be used as a stand-alone mod but it is used as a proof-of concept, which will enable functionality for more ambitious mods.
+
+[h1]Words of Warning[/h1]
+- This mod is relatively experimental; [b]use at your own risk[/b]. 
+- Put other track mods (like CommonAPI2) before it in the load order
+
+[h1]Thanks[/h1]
+I have learned a lot (and in some cases, copied verbatim) from mods by other coders:
+- NL Modular Stations by [url=https://www.paypal.me/oppiescc]oppiescc[/url]

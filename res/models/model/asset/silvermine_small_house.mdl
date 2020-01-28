@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 3.6375160217285, 4.3900022506714, 6.4400277137756, },
+		bbMin = { -3.6375160217285, -4.3900022506714, -3.0000002384186, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 3.6375160217285, 4.3900022506714, 4.7200140953064, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "asset/shared/silver_mine_balks.mtl", "asset/shared/silver_mine_wall.mtl", "asset/shared/silver_mine_roof.mtl", "asset/shared/silver_mine_borders.mtl", "asset/shared/silver_mine_small_planks.mtl", "asset/shared/silver_mine_main_2.mtl", },
+						mesh = "asset/silvermine_small_house/small_house_lod0.msh",
+						name = "small_house",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 2144.9506835938,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

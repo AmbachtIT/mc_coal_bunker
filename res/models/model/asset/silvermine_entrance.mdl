@@ -1,0 +1,66 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 1.8482722043991, 3.8236424922943, 4.3920736312866, },
+		bbMin = { -6.5999999046326, -3.8620193004608, -0.047906629741192, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 4.2241358757019, 3.8428308963776, 2.2199900150299, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "asset/shared/heap_silver.mtl", },
+						mesh = "asset/silvermine_entrance/silver_mine_entrance_floor_lod0.msh",
+						name = "silver_mine_entrance_floor",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "asset/shared/silver_mine_entrance_wall.mtl", },
+						mesh = "asset/silvermine_entrance/silver_mine_entrance_wall_lod0.msh",
+						name = "silver_mine_entrance_wall",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "asset/shared/silver_mine_main_2.mtl", },
+						mesh = "asset/silvermine_entrance/silver_mine_entrance_hole_lod0.msh",
+						name = "silver_mine_entrance_hole",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "asset/shared/silver_mine_big_planks.mtl", },
+						mesh = "asset/silvermine_entrance/silver_mine_entrance_big_planks_lod0.msh",
+						name = "silver_mine_entrance_big_planks",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "asset/shared/silver_mine_small_planks.mtl", },
+						mesh = "asset/silvermine_entrance/silver_mine_entrance_small_planks_lod0.msh",
+						name = "silver_mine_entrance_small_planks",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "asset/shared/silver_mine_balks.mtl", },
+						mesh = "asset/silvermine_entrance/silver_mine_entrance_balks_lod0.msh",
+						name = "silver_mine_entrance_balks",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 1842.3969726563,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

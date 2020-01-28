@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 20.800905227661, 20, 0.30000001192093, },
+		bbMin = { -5.5511151231258e-17, -0.80188846588135, -1.7034442226466e-30, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 10.400452613831, 10.400943756104, 0.15000000596046, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "asset/shared/silver_mine_main_3.mtl", },
+						mesh = "asset/track_base_90/track_base_90_lod0.msh",
+						name = "track_base_90",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 4799.1020507813,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

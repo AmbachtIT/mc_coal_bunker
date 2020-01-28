@@ -1,0 +1,57 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 1.0189059972763, 0.67459601163864, 1.4718279838562, },
+		bbMin = { -0.99555802345276, -0.67459601163864, 0.002917000092566, },
+	},
+	collider = {
+		params = { },
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "MESH",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/silver_ore.mtl", },
+						mesh = "industry/cargo/lod_0_cargo_open_container_fill_iron.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "industry/cargo/cargo_items_2.mtl", },
+						mesh = "industry/cargo/lod_0_cargo_open_container.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 110,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/silver_ore.mtl", },
+						mesh = "industry/cargo/lod_1_cargo_open_container_fill_iron.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "industry/cargo/cargo_items_2.mtl", },
+						mesh = "industry/cargo/lod_1_cargo_open_container.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 110,
+			visibleTo = 600,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

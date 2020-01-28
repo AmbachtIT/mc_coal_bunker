@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 3.4624965190887, 3.3453481197357, 2.002147436142, },
+		bbMin = { -3.4624965190887, -3.3453483581543, -1.1175872671743e-08, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 3.4624965190887, 3.3453483581543, 1.001073718071, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "asset/shared/heap_silver.mtl", },
+						mesh = "asset/heap_silver_medium/heap_silver_medium_lod0.msh",
+						name = "heap_silver_medium",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 1562.2673339844,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end
