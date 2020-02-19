@@ -1,4 +1,7 @@
 local manager = require "manager"
+local mc_supply_util = require "mc_supply_util"
+local util = require "util"
+local entitytracker = require "entitytracker"
 
 function data() return {
 	info = {
@@ -22,44 +25,13 @@ function data() return {
 	},
 	runFn = function (settings)
 		game.config.industryButton = true
+		mc_supply_util.setup()
+		mc_supply_util.registerSupplyStationType("industry/coal_bunker.con")
 
 		addModifier("loadModel", function (fileName, data)
-			if (string.find(fileName, "vehicle") == nil) then
-				return data
-			end
-			if (data.metadata) then
-				if (data.metadata.roadVehicle) then
-					if (data.metadata.roadVehicle.topSpeed) then
-
-					end
-
-
-					-- RELEVANT PROPS
-					-- float airVehicle.weight
-					-- float airVehicle.topSpeed (m/s)
-
-					-- float railVehicle.weight
-					-- float railVehicle.topSpeed (m/s)
-					-- string railVehicle.engines.*.type: HORSE, STEAM, ELECTRIC, DIESEL
-
-					-- float roadVehicle.weight
-					-- float roadVehicle.topSpeed (m/s)
-					-- string roadVehicle.engine.type: HORSE, STEAM, ELECTRIC, DIESEL
-
-					-- float waterVehicle.weight
-					-- float waterVehicle.topSpeed (m/s)
-
-					-- int cost.price
-
-					-- string description.name
-
-
-
-
-				end
-			end
+			mc_supply_util.registerVehicleType(fileName, data)
 			return data
 		end)
 
-	end
+	end,
 } end

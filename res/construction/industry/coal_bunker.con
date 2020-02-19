@@ -1,4 +1,5 @@
 local industryutil = require "industryutil"
+local mc_supply_util = require "mc_supply_util"
 
 --Begin Generated
 local generatedData = {
@@ -439,16 +440,15 @@ function data()
 
         params = nil,           -- The options in the build menu. Will be overwritten by industryutil.addIndustryData
 		order = 19681,          -- Order in the build menu
-        pacementParams = nil,   -- Disable automatic placement on level generation
-
+		placementParams = nil,  -- Disable automatic placement on level generation
+		
+		mcSupplyStation = {  
+			inputs = { COAL = 1 },
+			demand = 20,
+		}
 	}
 	
-	local stockListConfig = {
-		stocks = { "COAL" },
-		rule = { input = { { 1 } }, output = {  }, capacity = 20 },
-	}
-
-	industryutil.addIndustryData("coal_bunker", "a", generatedData, constr, stockListConfig)
+	mc_supply_util.makeSupplyStation("coal_bunker", "industry/coal_bunker.con", constr, generatedData)
 
 	return constr
 end

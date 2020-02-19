@@ -1,34 +1,38 @@
+local util = require("util")
+
 -- Manager object
 local t = {
+	isFirstTime = true,
+	ignoreInitially = { 
+		ANIMAL = true, 
+		ASSET_GROUP = true,
+		BASE_NODE = true,
+		BASE_EDGE = true,
+		CONSTRUCTION = true,
+		SIM_BUILDING = true,
+		TOWN = true,
+		TOWN_BUILDING = true,
+	},
+	ignoreAlways = {
+		SIM_PERSON = true
+	},
+	visited = {}
 }
+
+
 
 -- Manager state
 local state = {
     eventsProcessed = 0
 }
 
-
-local function safetostring(p)
-	if p == nil then
-		return "nil"
-	end
-	if(type(p) == "string") then
-		return "\"" .. p .. "\""
-	end
-	if(type(p) == "table") then
-		local result = "{ "
-		for key, value in pairs(p) do
-			result = result .. key .. ": " .. safetostring(value) .. ", "
-		end
-		result = result .. " }" 
-		return result
-	end
-	
-	return tostring(p)
-end
-
 -- Manager handlers
 t.script = {
+	init = function() 
+	end,
+
+	guiInit = function() 
+	end,
 
 	-- Return state that will be serialized in the save game
 	save = function()
@@ -38,6 +42,12 @@ t.script = {
 	-- Load state that was deserialized from the save game
 	load = function(loadedstate)
 		state = loadedstate or state
+	end,
+
+	update = function() 
+	end,
+
+	guiUpdate = function() 
 	end,
 
 	-- Handle game event
@@ -57,7 +67,7 @@ t.script = {
 		end
 
         state.eventsProcessed = state.eventsProcessed + 1
-		print("MC handleEvent(src, id, name, param): (" .. safetostring(src) .. ", ".. safetostring(id) .. ", ".. safetostring(name) .. ", " .. safetostring(param) .. ")")
+		print("MC handleEvent(src, id, name, param): (" .. util.safetostring(src) .. ", ".. util.safetostring(id) .. ", ".. util.safetostring(name) .. ", " .. util.safetostring(param) .. ")")
 	end,
 
 	-- Handle UI event
@@ -70,7 +80,7 @@ t.script = {
 		
 
         state.eventsProcessed = state.eventsProcessed + 1
-		print("MC guiHandleEvent(id, name, param): (" .. safetostring(id) .. ", ".. safetostring(name) .. ", " .. safetostring(param) .. ")")
+		print("MC guiHandleEvent(id, name, param): (" .. util.safetostring(id) .. ", ".. util.safetostring(name) .. ", " .. util.safetostring(param) .. ")")
 	end,
 }
 
